@@ -1,0 +1,215 @@
+/* Variáveis */
+:root {
+  --primary: #00796b;
+  --primary-dark: #004d40;
+  --background: #e0f7fa;
+  --text: #004d40;
+  --white: #ffffff;
+  --black: #000000;
+  --yellow: #ffff00;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Base */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--background);
+  color: var(--text);
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+/* Cabeçalho */
+.site-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: 8px;
+}
+
+.site-header h1 {
+  color: var(--primary-dark);
+}
+
+/* Conteúdo Principal */
+.main-content {
+  padding: 1rem;
+}
+
+/* Controles */
+.controls {
+  margin-bottom: 2rem;
+}
+
+.accessibility-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.accessibility-controls label {
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 2px solid var(--primary-dark);
+  border-radius: 8px;
+  resize: vertical;
+  margin-bottom: 1rem;
+  background-color: var(--white);
+}
+
+/* Botões */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.action-button {
+  flex: 1;
+  min-width: 150px;
+  padding: 0.7rem 1.2rem;
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.action-button:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Resultados */
+.results {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  margin-top: 1rem;
+}
+
+.text-output {
+  padding: 1rem;
+  background-color: var(--white);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.media-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+audio, video {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Rodapé */
+.site-footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: 8px;
+}
+
+/* Modos de Acessibilidade */
+body.high-contrast {
+  background-color: var(--black) !important;
+  color: var(--yellow) !important;
+}
+
+body.high-contrast .site-header,
+body.high-contrast .main-content,
+body.high-contrast .site-footer,
+body.high-contrast .results,
+body.high-contrast textarea,
+body.high-contrast .text-output {
+  background-color: var(--black) !important;
+  color: var(--yellow) !important;
+  border-color: var(--white) !important;
+}
+
+body.high-contrast .action-button {
+  background-color: var(--yellow) !important;
+  color: var(--black) !important;
+  border: 2px solid var(--white) !important;
+}
+
+body.high-contrast h1,
+body.high-contrast h2,
+body.high-contrast h3 {
+  color: var(--yellow) !important;
+}
+
+body.inverted {
+  background-color: var(--white) !important;
+  color: var(--black) !important;
+}
+
+body.inverted .site-header,
+body.inverted .site-footer,
+body.inverted .results,
+body.inverted textarea,
+body.inverted .text-output {
+  background-color: var(--white) !important;
+  color: var(--black) !important;
+  border-color: var(--black) !important;
+}
+
+body.inverted .action-button {
+  background-color: var(--black) !important;
+  color: var(--white) !important;
+  border: 2px solid var(--black) !important;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .button-group {
+    flex-direction: column;
+  }
+  
+  .accessibility-controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.error {
+    color: #d32f2f;
+    background-color: #ffebee;
+    padding: 10px;
+    border-radius: 4px;
+    border-left: 4px solid #d32f2f;
+}
+
+#results {
+    transition: all 0.3s ease;
+}

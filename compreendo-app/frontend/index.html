@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compreendo+</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Compreendo+</h1>
+    <p>Transforme textos complexos em versões acessíveis com voz e Libras</p>
+  </header>
+
+  <main class="main-content">
+    <section class="controls">
+      <div class="accessibility-controls">
+        <label for="fontSize">Tamanho da fonte:</label>
+        <input type="range" id="fontSize" min="14" max="24" value="16">
+        
+        <label for="contrast">Modo de contraste:</label>
+        <select id="contrast">
+          <option value="default">Padrão</option>
+          <option value="high-contrast">Alto contraste</option>
+          <option value="inverted">Inverter cores</option>
+        </select>
+      </div>
+
+      <textarea id="inputText" placeholder="Digite ou cole o texto aqui..."></textarea>
+
+      <div class="button-group">
+        <button id="simplifyBtn" class="action-button">Simplificar Texto</button>
+        <button id="ttsBtn" class="action-button">Ler em Voz Alta</button>
+        <button id="librasBtn" class="action-button">Traduzir para Libras</button>
+      </div>
+    </section>
+
+    <section id="results" class="results">
+      <h2>Resultado</h2>
+      <div class="result-content">
+        <h3>Texto Simplificado:</h3>
+        <div id="simplifiedText" class="text-output" aria-live="polite"></div>
+        
+        <div class="media-controls">
+          <audio id="audioPlayer" controls></audio>
+          <video id="librasVideo" controls></video>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Compreendo+ - Tecnologia para inclusão</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
