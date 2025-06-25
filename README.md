@@ -1,4 +1,5 @@
 🧠 Compreendo+
+
 Projeto voltado à acessibilidade e inclusão na comunicação digital
 
 O Compreendo+ é uma aplicação interativa desenvolvida com foco em acessibilidade comunicacional, permitindo que usuários insiram textos, links ou vídeos e recebam versões adaptadas com linguagem simplificada, além de recursos visuais e controles de usabilidade (como ajuste de contraste e tamanho da fonte).
@@ -6,6 +7,7 @@ O Compreendo+ é uma aplicação interativa desenvolvida com foco em acessibilid
 Pensado para atender pessoas com dificuldades de leitura e compreensão textual, o projeto visa promover a inclusão digital e educacional, utilizando tecnologia como ferramenta de transformação social.
 
 🚀 Tecnologias utilizadas:
+
 React.js 
 
 Tailwind CSS 
