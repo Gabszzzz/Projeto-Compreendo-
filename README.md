@@ -23,3 +23,5 @@ Conversão de linguagem complexa em texto mais acessível
 Ajuste de contraste e tamanho da fonte
 
 Design centrado na experiência do usuário
+
+Disclaimer: Esse foi um projeto do hackthoon Unicesumar 2025 o qual foi desenvolvido somente em estágio inicial ... talvez algum dia volte a trabalhar nele.
